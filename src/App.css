@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
+:root {
+  padding: 0;
+  margin: 0;
+  font-family: 'Bruno Ace', cursive;
+}
+
+.main {
+  min-height: 14rem;
+  display: grid;
+  grid-template-areas:
+    "controls"
+    "bears"
+    "counter"
+}
+
+.bears,
+.controls,
+.counter {
+  margin: auto;
+  font-size: x-large;
+  border-radius: 5px;
+  width: 250px;
+  text-align: center;
+}
+
+.bears {
+  height: 64px;
+  overflow-y: scroll;
+  border: 1px #f4a460 solid;
+  padding: 0.2rem 1rem;
+  grid-area: bears;
+}
+
+.controls {
+  grid-area: controls;
+}
+
+.counter {
+  grid-area: counter;
+  padding: 1rem;
+  background-color: #d7a172;
+}
+
+.btn {
+  height: 40px;
+  width: 80px;
+  background-color: bisque;
+  margin: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px
+}
